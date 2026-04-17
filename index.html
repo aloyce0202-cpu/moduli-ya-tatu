@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="sw">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Moduli ya Tatu - Utii</title>
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+h1 {
+    color: #2c3e50;
+    text-align: center;
+}
+
+h2 {
+    color: #16a085;
+}
+
+.section {
+    background: #f9f9f9;
+    padding: 15px;
+    margin: 15px 0;
+    border-left: 6px solid #3498db;
+    border-radius: 5px;
+}
+
+.quote {
+    background: #ffeaa7;
+    padding: 10px;
+    font-style: italic;
+    border-left: 5px solid #e17055;
+}
+
+button {
+    background: #0984e3;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin-top: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: #0652DD;
+}
+
+.answer {
+    display: none;
+    background: #dff9fb;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+}
+
+.congrats {
+    display: none;
+    text-align: center;
+    background: #55efc4;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.gift {
+    font-size: 18px;
+    margin-top: 10px;
+    color: #2d3436;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Uchambuzi wa Moduli ya Tatu: Vipimo vya Utii wa Mwanamke kwa Mumewe</h1>
+
+<p>
+Utii katika muktadha wa ndoa ya kisasa mara nyingi hueleweka vibaya kama unyonge au kupoteza haki ya kutoa maoni. Hata hivyo, uchambuzi wa kina unaonesha kuwa utii ni <b>lugha ya upendo na heshima</b> inayolinda amani ya nyumba. Utii huu haupimwi kwa maneno matupu, bali unadhihirika katika maeneo makuu yafuatayo:
+</p>
+
+<div class="section">
+<h2>1. Eneo la Maamuzi na Mamlaka ya Nyumba</h2>
+<p><b>Uchambuzi:</b> Mwanamke mtiifu hajishindanii mamlaka na mumewe. Badala yake, anatumia ushawishi badala ya nguvu.</p>
+<div class="quote">"Ndoa si demokrasia ya kura..."</div>
+<p><b>Mfano:</b> Mwanamke huunga mkono uamuzi wa mume mbele ya watoto.</p>
+</div>
+
+<div class="section">
+<h2>2. Eneo la Utunzaji wa Siri na Heshima ya Mume</h2>
+<p><b>Uchambuzi:</b> Kumtii mume ni pamoja na kumlinda.</p>
+<div class="quote">"Heshima ya mume hujengwa..."</div>
+</div>
+
+<div class="section">
+<h2>3. Eneo la Matumizi ya Lugha na Mawasiliano</h2>
+<p><b>Uchambuzi:</b> Lugha ya unyenyekevu inaashiria heshima.</p>
+</div>
+
+<div class="section">
+<h2>4. Eneo la Uhusiano wa Ndani</h2>
+<p><b>Uchambuzi:</b> Utii haupaswi kutumika kama silaha.</p>
+</div>
+
+<div class="section">
+<h2>5. Eneo la Usimamizi wa Mali</h2>
+<p><b>Uchambuzi:</b> Mwanamke mtiifu ni meneja mzuri wa rasilimali.</p>
+</div>
+
+<h2>Maswali ya Kujadili</h2>
+
+<div>
+<p>1. Utii ni nini?</p>
+<button onclick="toggle(1)">Onesha Jibu</button>
+<div id="a1" class="answer">Ni lugha ya upendo na heshima ndani ya ndoa.</div>
+
+<p>2. Utii hupimwa vipi?</p>
+<button onclick="toggle(2)">Onesha Jibu</button>
+<div id="a2" class="answer">Kupitia vitendo, si maneno tu.</div>
+
+<p>3. Mwanamke mtiifu hutumia nini badala ya nguvu?</p>
+<button onclick="toggle(3)">Onesha Jibu</button>
+<div id="a3" class="answer">Ushawishi.</div>
+
+<p>4. Ni nini kinaharibu utii?</p>
+<button onclick="toggle(4)">Onesha Jibu</button>
+<div id="a4" class="answer">Dharau na lugha mbaya.</div>
+
+<p>5. Je utii ni utumwa?</p>
+<button onclick="toggle(5)">Onesha Jibu</button>
+<div id="a5" class="answer">Hapana, ni nidhamu ya mahusiano.</div>
+
+<p>6. Utii unahusisha nini katika fedha?</p>
+<button onclick="toggle(6)">Onesha Jibu</button>
+<div id="a6" class="answer">Usimamizi mzuri wa rasilimali.</div>
+
+<p>7. Lugha ina nafasi gani?</p>
+<button onclick="toggle(7)">Onesha Jibu</button>
+<div id="a7" class="answer">Ni kipimo kikubwa cha heshima.</div>
+
+<p>8. Siri za ndoa zinapaswa?</p>
+<button onclick="toggle(8)">Onesha Jibu</button>
+<div id="a8" class="answer">Kulindwa.</div>
+
+<p>9. Utii huleta nini?</p>
+<button onclick="toggle(9)">Onesha Jibu</button>
+<div id="a9" class="answer">Upendo na amani.</div>
+
+<p>10. Mwanamke mtiifu ni nani?</p>
+<button onclick="toggle(10)">Onesha Jibu</button>
+<div id="a10" class="answer">Anayeheshimu na kuunga mkono mumewe kwa hekima.</div>
+
+</div>
+
+<br>
+<button onclick="malizaKozi()">Maliza Kusoma moduli</button>
+
+<div id="congrats" class="congrats">
+<h2>🎉 Hongera Sana! 🎉</h2>
+<p>Umefanikiwa kumaliza moduli hii muhimu.</p>
+
+<div class="gift">
+🎁 <b>Zawadi Yako:</b><br><br>
+Wewe ni mtu mwenye dhamira ya kujifunza na kuboresha maisha yako. Endelea kuwa mfano wa hekima, upendo, na heshima. Dunia inahitaji watu kama wewe — usikate tamaa, safari yako ina maana kubwa sana!
+</div>
+
+</div>
+
+</div>
+
+<script>
+function toggle(num){
+    var x = document.getElementById("a"+num);
+    if(x.style.display === "none"){
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}
+
+function malizaKozi(){
+    document.getElementById("congrats").style.display = "block";
+}
+</script>
+
+</body>
+</html>
